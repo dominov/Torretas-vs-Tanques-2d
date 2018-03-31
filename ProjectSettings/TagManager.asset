@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bala
+  - Bola
+  - text_salud
+  - text_puntos
+  - text_game_over
+  - text_reset
+  - Flecha_derecha
+  - Flecha_izquierda
+  - imagenPausa
   layers:
   - Default
   - TransparentFX
@@ -13,8 +22,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Player
+  - Escenario
   - 
   - 
   - 

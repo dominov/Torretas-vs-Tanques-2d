@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Torretas-vs-Tanques-2d", "Torretas-vs-Tanques-2d.csproj", "{262D9D87-AF0F-5AE3-DA6D-D16A7EADDA95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Torretas-vs-Tanques-2d.Plugins", "Torretas-vs-Tanques-2d.Plugins.csproj", "{C867BFEC-3E16-8BFD-9A2A-5D0D18E84176}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Torretas-vs-Tanques-2d.Editor.Plugins", "Torretas-vs-Tanques-2d.Editor.Plugins.csproj", "{BF127865-DC23-3DC7-3F18-D33F24478C5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Torretas-vs-Tanques-2d.Editor", "Torretas-vs-Tanques-2d.Editor.csproj", "{B70E6D15-DEDA-7983-4E3E-92F2B15CB13F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{262D9D87-AF0F-5AE3-DA6D-D16A7EADDA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{262D9D87-AF0F-5AE3-DA6D-D16A7EADDA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{262D9D87-AF0F-5AE3-DA6D-D16A7EADDA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{262D9D87-AF0F-5AE3-DA6D-D16A7EADDA95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C867BFEC-3E16-8BFD-9A2A-5D0D18E84176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C867BFEC-3E16-8BFD-9A2A-5D0D18E84176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C867BFEC-3E16-8BFD-9A2A-5D0D18E84176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C867BFEC-3E16-8BFD-9A2A-5D0D18E84176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF127865-DC23-3DC7-3F18-D33F24478C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF127865-DC23-3DC7-3F18-D33F24478C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF127865-DC23-3DC7-3F18-D33F24478C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF127865-DC23-3DC7-3F18-D33F24478C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B70E6D15-DEDA-7983-4E3E-92F2B15CB13F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70E6D15-DEDA-7983-4E3E-92F2B15CB13F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70E6D15-DEDA-7983-4E3E-92F2B15CB13F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70E6D15-DEDA-7983-4E3E-92F2B15CB13F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
