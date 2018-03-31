@@ -210,15 +210,15 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114081711526276930, guid: 68e21fdeddcfaa045b9dca0a3ac85888,
+        type: 2}
+      propertyPath: axesToUse
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114145559050975422, guid: 68e21fdeddcfaa045b9dca0a3ac85888,
         type: 2}
-      propertyPath: MovementRange
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 224625643950145252, guid: 68e21fdeddcfaa045b9dca0a3ac85888,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -200
+      propertyPath: axesToUse
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68e21fdeddcfaa045b9dca0a3ac85888, type: 2}
@@ -315,6 +315,11 @@ Prefab:
     - target: {fileID: 4928012186388530, guid: 7f221d3e3ff8be14a91ee1cdb0621b57, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114321076282591588, guid: 7f221d3e3ff8be14a91ee1cdb0621b57,
+        type: 2}
+      propertyPath: rotacionSpeed
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f221d3e3ff8be14a91ee1cdb0621b57, type: 2}
@@ -549,7 +554,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1253792363
 SpriteRenderer:
   m_ObjectHideFlags: 0

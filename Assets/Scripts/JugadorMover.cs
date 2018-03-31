@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityStandardAssets.CrossPlatformInput;
 
 public class JugadorMover : MonoBehaviour {
 
@@ -31,8 +31,8 @@ public class JugadorMover : MonoBehaviour {
         controlador = ga.GetComponent<ControladorJuego>();
 
 
-        der = GameObject.FindWithTag("Flecha_derecha").GetComponent<ElementoInteractivo>();
-        Izq = GameObject.FindWithTag("Flecha_izquierda").GetComponent<ElementoInteractivo>();
+       // der = GameObject.FindWithTag("Flecha_derecha").GetComponent<ElementoInteractivo>();
+        //Izq = GameObject.FindWithTag("Flecha_izquierda").GetComponent<ElementoInteractivo>();
     }
 
     private void Start()
@@ -44,7 +44,7 @@ public class JugadorMover : MonoBehaviour {
 
 
         //float direccion = Izq.pulsado ? -1 : (der.pulsado ? 1 : Input.GetAxisRaw("Horizontal"));
-        float direccion = Izq.pulsado ? -1 : (der.pulsado ? 1 : 0);
+		float direccion = CrossPlatformInputManager.GetAxis("Horizontal");  //Izq.pulsado ? -1 : (der.pulsado ? 1 : 0);
         float posX = Mathf.Clamp( transform.position.x + (direccion * velocidaMovimiento * Time.deltaTime),minX,maxY);
         transform.position = new Vector3(posX, transform.position.y, transform.position.z);
 		
