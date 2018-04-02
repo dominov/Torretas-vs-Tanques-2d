@@ -13,10 +13,12 @@ public class BolaContacto : MonoBehaviour
     public int vida = 10;
     public int nivelDanno=1;
 
+	private int vidaInicial;
     private void Awake()
     {
         GameObject ga = GameObject.FindWithTag("GameController");
         controlador = ga.GetComponent<ControladorJuego>();
+		vidaInicial = vida;
     }
 
     void OnCollisionEnter2D(Collision2D  collision)
@@ -37,12 +39,13 @@ public class BolaContacto : MonoBehaviour
     {
         
         vida = vida-v;
-       
+		TextoFlotanteControlador.CrearTextoFlotante ("-" + v, transform);
         if (vida == 0)
         {
             controlador.SubirPuntos(nivelDanno);
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
+			TextoFlotanteControlador.CrearTextoFlotante (vidaInicial.ToString(), transform);
            // controlador.InstaciarAsteroide(UnityEngine.Random.Range(1,4));
         }
     }

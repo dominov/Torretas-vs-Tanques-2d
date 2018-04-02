@@ -38,6 +38,8 @@ public class ControladorJuego : MonoBehaviour {
         StartCoroutine(InstaciarAsteroide());
        
          ActualizarTextoPuntos();
+
+		TextoFlotanteControlador.Initialize ();
     }
 
     // Update is called once per frame

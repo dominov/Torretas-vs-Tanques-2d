@@ -63,7 +63,10 @@
      <Compile Include="Assets\Scripts\ElementoInteractivo.cs" />
      <Compile Include="Assets\Scripts\JugadorMover.cs" />
      <Compile Include="Assets\Scripts\JugadorRotacion.cs" />
+     <Compile Include="Assets\Scripts\LazaerElegirObjetivo.cs" />
      <Compile Include="Assets\Scripts\RuedasRotador.cs" />
+     <Compile Include="Assets\Scripts\TextoFlotante.cs" />
+     <Compile Include="Assets\Scripts\TextoFlotanteControlador.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -39,16 +39,18 @@ public class CannonRotar : MonoBehaviour {
         }
         else
         {
-             p1 = new Vector2(0, 0);
-             p2 = new Vector2(CrossPlatformInputManager.GetAxis("Horizontal2"), CrossPlatformInputManager.GetAxis("Vertical2"));
-
-           
+			if (CrossPlatformInputManager.GetAxis ("Horizontal2")!=0 || CrossPlatformInputManager.GetAxis ("Vertical2")!=0) {
+				p1 = new Vector2 (0, 0);
+				p2 = new Vector2 (CrossPlatformInputManager.GetAxis ("Horizontal2"), CrossPlatformInputManager.GetAxis ("Vertical2"));
+			} else {
+				p1  = new Vector2 (0, 0);
+				p2 = new Vector2 (0, 1);
+			}
 
         }
-        Debug.Log(Mathf.Atan2(p2.y - p1.y, p2.x - p1.x) * 180 / Mathf.PI);
-
-
+        
         float angle = Mathf.Atan2(p2.y - p1.y, p2.x - p1.x) * 180 / Mathf.PI;
+	
         angle = Mathf.Clamp(Mathf.Abs(angle), 0, 180);
         transform.eulerAngles = new Vector3(0, 0, angle);
 
