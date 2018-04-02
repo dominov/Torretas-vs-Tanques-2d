@@ -14,7 +14,7 @@ public class BalaMover : MonoBehaviour {
     void Start()
     {
         
-        rig.velocity = transform.up * velocidad;
+        rig.velocity = transform.right * velocidad;
     }
 
 }

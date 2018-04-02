@@ -13,6 +13,9 @@ TagManager:
   - Flecha_derecha
   - Flecha_izquierda
   - imagenPausa
+  - btn_reset
+  - joystick_rotar
+  - lazer_apuntar
   layers:
   - Default
   - TransparentFX

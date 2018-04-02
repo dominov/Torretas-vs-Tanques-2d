@@ -23,16 +23,19 @@ public class JugadorMover : MonoBehaviour {
 
     private  ControladorJuego controlador;
 
-    private ElementoInteractivo der, Izq;
+    public Rigidbody2D rb;
+
+    public int impulso = 3;
+
     private void Awake()
     {
         textoVida = GameObject.FindWithTag("text_salud").GetComponent<Text>();
         GameObject ga = GameObject.FindWithTag("GameController");
         controlador = ga.GetComponent<ControladorJuego>();
 
-
-       // der = GameObject.FindWithTag("Flecha_derecha").GetComponent<ElementoInteractivo>();
-        //Izq = GameObject.FindWithTag("Flecha_izquierda").GetComponent<ElementoInteractivo>();
+        
+            rb = GetComponent<Rigidbody2D>();
+        
     }
 
     private void Start()
@@ -43,12 +46,25 @@ public class JugadorMover : MonoBehaviour {
 
 
 
-        //float direccion = Izq.pulsado ? -1 : (der.pulsado ? 1 : Input.GetAxisRaw("Horizontal"));
-		float direccion = CrossPlatformInputManager.GetAxis("Horizontal");  //Izq.pulsado ? -1 : (der.pulsado ? 1 : 0);
-        float posX = Mathf.Clamp( transform.position.x + (direccion * velocidaMovimiento * Time.deltaTime),minX,maxY);
-        transform.position = new Vector3(posX, transform.position.y, transform.position.z);
-		
-      
+        if (CrossPlatformInputManager.GetButton("izquierda"))
+        {
+            float posX = Mathf.Clamp(transform.position.x + (-impulso * velocidaMovimiento * Time.deltaTime), minX, maxY);
+            transform.position = new Vector3(posX, transform.position.y, transform.position.z);
+        }
+
+        else if (CrossPlatformInputManager.GetButton("derecha"))
+        {
+            float posX = Mathf.Clamp(transform.position.x + (impulso * velocidaMovimiento * Time.deltaTime), minX, maxY);
+            transform.position = new Vector3(posX, transform.position.y, transform.position.z);
+        }
+        else
+        {
+            float direccion = CrossPlatformInputManager.GetAxis("Horizontal");  //Izq.pulsado ? -1 : (der.pulsado ? 1 : 0);
+
+            float posX = Mathf.Clamp(transform.position.x + (direccion * velocidaMovimiento * Time.deltaTime), minX, maxY);
+            transform.position = new Vector3(posX, transform.position.y, transform.position.z);
+
+        }
     }
 
 	void Voltear(){

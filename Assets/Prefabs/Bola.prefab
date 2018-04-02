@@ -67,7 +67,7 @@ Transform:
   m_GameObject: {fileID: 1139667181077598}
   m_LocalRotation: {x: 0, y: -0, z: 0.9238796, w: -0.38268325}
   m_LocalPosition: {x: -12.17, y: 3.68, z: -0.27}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 4529087778828202}
   m_Father: {fileID: 0}
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadGiro: 0
-  velocidadMovimiento: 10
+  velocidadMovimiento: 6
 --- !u!212 &212070785339999296
 SpriteRenderer:
   m_ObjectHideFlags: 1

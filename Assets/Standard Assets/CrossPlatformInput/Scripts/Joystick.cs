@@ -24,7 +24,7 @@ namespace UnityStandardAssets.CrossPlatformInput
 		bool m_UseY; // Toggle for using the Y axis
 		CrossPlatformInputManager.VirtualAxis m_HorizontalVirtualAxis; // Reference to the joystick in the cross platform input
 		CrossPlatformInputManager.VirtualAxis m_VerticalVirtualAxis; // Reference to the joystick in the cross platform input
-
+        public bool pulsado = false;
 		void OnEnable()
 		{
 			CreateVirtualAxes();
@@ -78,26 +78,30 @@ namespace UnityStandardAssets.CrossPlatformInput
 			if (m_UseX)
 			{
 				int delta = (int)(data.position.x - m_StartPos.x);
-				delta = Mathf.Clamp(delta, - MovementRange, MovementRange);
+				//delta = Mathf.Clamp(delta, - MovementRange, MovementRange);
 				newPos.x = delta;
 			}
 
 			if (m_UseY)
 			{
 				int delta = (int)(data.position.y - m_StartPos.y);
-				delta = Mathf.Clamp(delta, -MovementRange, MovementRange);
+				//delta = Mathf.Clamp(delta, -MovementRange, MovementRange);
 				newPos.y = delta;
 			}
-			transform.position = new Vector3(m_StartPos.x + newPos.x, m_StartPos.y + newPos.y, m_StartPos.z + newPos.z);
+			transform.position = Vector3.ClampMagnitude( new Vector3(newPos.x, newPos.y, newPos.z), MovementRange) + m_StartPos;
 			UpdateVirtualAxes(transform.position);
-		}
+            pulsado = true;
+
+        }
 
 
 		public void OnPointerUp(PointerEventData data)
 		{
 			transform.position = m_StartPos;
 			UpdateVirtualAxes(m_StartPos);
-		}
+            pulsado = false;
+
+        }
 
 
 		public void OnPointerDown(PointerEventData data) { }
