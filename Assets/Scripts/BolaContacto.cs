@@ -39,13 +39,13 @@ public class BolaContacto : MonoBehaviour
     {
         
         vida = vida-v;
-		TextoFlotanteControlador.CrearTextoFlotante ("-" + v, transform);
+
         if (vida == 0)
         {
-            controlador.SubirPuntos(nivelDanno);
+			controlador.SubirPuntos(vidaInicial*nivelDanno);
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
-			TextoFlotanteControlador.CrearTextoFlotante (vidaInicial.ToString(), transform);
+			TextoFlotanteControlador.CrearTextoFlotante ("+"+vidaInicial.ToString(), transform);
            // controlador.InstaciarAsteroide(UnityEngine.Random.Range(1,4));
         }
     }

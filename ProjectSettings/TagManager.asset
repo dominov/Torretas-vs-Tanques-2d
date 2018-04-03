@@ -16,6 +16,7 @@ TagManager:
   - btn_reset
   - joystick_rotar
   - lazer_apuntar
+  - canvasTextos
   layers:
   - Default
   - TransparentFX
