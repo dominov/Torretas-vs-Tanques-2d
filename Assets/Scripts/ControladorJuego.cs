@@ -39,7 +39,7 @@ public class ControladorJuego : MonoBehaviour {
        
          ActualizarTextoPuntos();
 
-		TextoFlotanteControlador.Initialize ();
+		TextoFlotanteControlador.Initialize();
     }
 
     // Update is called once per frame

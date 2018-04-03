@@ -9,8 +9,8 @@ public class TextoFlotante : MonoBehaviour {
 	private Text damageText;
 	// Use this for initialization
 	void OnEnable () {
-		AnimatorClipInfo[] clipInfo = animador.GetCurrentAnimatorClipInfo (0);
-		Destroy (gameObject, clipInfo[0].clip.length);
+		AnimatorClipInfo[] clipInfo = animador.GetCurrentAnimatorClipInfo(0);
+		Destroy(gameObject, clipInfo[0].clip.length);
 		damageText = animador.GetComponent<Text>();
 	}
 

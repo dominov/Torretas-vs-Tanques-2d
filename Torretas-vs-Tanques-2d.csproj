@@ -261,6 +261,8 @@
     <Compile Include="Assets\Scripts\JugadorRotacion.cs" />
     <Compile Include="Assets\Scripts\LazaerElegirObjetivo.cs" />
     <Compile Include="Assets\Scripts\RuedasRotador.cs" />
+    <Compile Include="Assets\Scripts\TextoFlotante.cs" />
+    <Compile Include="Assets\Scripts\TextoFlotanteControlador.cs" />
     <Compile Include="Packages\com.unity.xiaomi\UnityChannel\XiaomiSupport\AppStoreSettings.cs" />
   </ItemGroup>
   <ItemGroup>

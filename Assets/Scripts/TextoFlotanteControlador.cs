@@ -7,13 +7,15 @@ public class TextoFlotanteControlador : MonoBehaviour {
 	private static GameObject canvas;
 
 	public static void Initialize(){
-		canvas = GameObject.Find ("canvas");
-		if (!textoFlotante) {
-			textoFlotante = Resources.Load<TextoFlotante>("Prefabs/Efectotextos/TextoPuntaje");
+		canvas = GameObject.Find ("Canvas");
+        Debug.Log(canvas);
+		if (textoFlotante==null) {
+			textoFlotante = Resources.Load<TextoFlotante>("Efectotextos/TextoPuntajeContenedor");
+            Debug.Log(textoFlotante);
 		}
 	}
 	public static void CrearTextoFlotante(string texto, Transform posicion ){
-		TextoFlotante instancia = Instantiate (textoFlotante);
+		TextoFlotante instancia = Instantiate(textoFlotante);
 		instancia.transform.SetParent (canvas.transform, false);
 		instancia.SetText (texto);
 	}
