@@ -30,6 +30,7 @@ public class BolaContacto : MonoBehaviour
             Instantiate(explosion, transform.position, Quaternion.identity);            
             collision.gameObject.GetComponent<JugadorMover>().BajarVida(nivelDanno);
             Destroy(gameObject);
+			controlador.EfectoDanno();
            // controlador.InstaciarAsteroide(UnityEngine.Random.Range(1, 4));
         }
 

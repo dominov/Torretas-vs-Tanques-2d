@@ -49,7 +49,7 @@ public class ControladorJuego : MonoBehaviour {
         } ;
     }
 
-    IEnumerator InstaciarAsteroide(){
+     IEnumerator InstaciarAsteroide(){
         while (true){ 
 
         for (int i = 0; i < Numerobolas; i++)
@@ -80,4 +80,21 @@ public class ControladorJuego : MonoBehaviour {
         gameover = restar = true;
         
     }
+
+	public void EfectoDanno(){
+		StartCoroutine(EfectoDannoCorr());
+	}
+	public IEnumerator EfectoDannoCorr(){
+		
+		imgPausa.gameObject.SetActive(true);
+		yield return new WaitForSeconds(.05f);
+		imgPausa.gameObject.SetActive(false);
+		/*yield return new WaitForSeconds(.05f);
+		imgPausa.gameObject.SetActive(true);
+		yield return new WaitForSeconds(.05f);
+		imgPausa.gameObject.SetActive(false);*/
+
+
+	}
+
 }

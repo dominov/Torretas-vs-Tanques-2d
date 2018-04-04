@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BolaContacto.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ControladorJuego.cs">
     <Files>
-      <File FileName="Assets/Scripts/ControladorJuego.cs" Line="42" Column="35" />
-      <File FileName="Assets/Scripts/CannonRotar.cs" Line="47" Column="28" />
-      <File FileName="Assets/Scripts/TextoFlotante.cs" Line="6" Column="45" />
-      <File FileName="Assets/Scripts/TextoFlotanteControlador.cs" Line="10" Column="42" />
-      <File FileName="Assets/Scripts/BolaContacto.cs" Line="45" Column="50" />
+      <File FileName="Assets/Scripts/ControladorJuego.cs" Line="95" Column="42" />
+      <File FileName="Assets/Scripts/CannonRotar.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TextoFlotante.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TextoFlotanteControlador.cs" Line="27" Column="3" />
+      <File FileName="Assets/Scripts/BolaContacto.cs" Line="33" Column="21" />
       <File FileName="Assets/Scripts/BalaDisparar.cs" Line="20" Column="100" />
       <File FileName="Assets/Scripts/BalaContacto.cs" Line="1" Column="1" />
     </Files>
