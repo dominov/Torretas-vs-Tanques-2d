@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 58105647831512538}
   - component: {fileID: 114911446053327886}
   - component: {fileID: 114584718436974516}
+  - component: {fileID: 23145770440051288}
   m_Layer: 8
   m_Name: Bola
   m_TagString: Bola
@@ -65,14 +66,48 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1139667181077598}
-  m_LocalRotation: {x: 0, y: -0, z: 0.9238796, w: -0.38268325}
-  m_LocalPosition: {x: -12.17, y: 3.68, z: -0.27}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
   - {fileID: 4529087778828202}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 225}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23145770440051288
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1139667181077598}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!50 &50842538343139024
 Rigidbody2D:
   serializedVersion: 4
@@ -92,7 +127,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &58105647831512538
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -120,10 +155,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 1785003649963818, guid: 65bdc0bc03dd0044386a482799fd06c4, type: 2}
-  controlador: {fileID: 114437725564818960, guid: edeafe77efbaffe46ace15fdd655c7ea,
-    type: 2}
+  controlador: {fileID: 0}
   vida: 5
   nivelDanno: 1
+  mySprite: {fileID: 0}
+  spriteRenderer: {fileID: 212070785339999296}
+  img1: {fileID: 21300000, guid: 7845ec72d71560f4185142031744d963, type: 3}
+  img2: {fileID: 21300000, guid: 3d15e3d7a144f485db8b291189dee65d, type: 3}
+  img3: {fileID: 21300000, guid: 4b8b142aee021432dbb4fe566f64b696, type: 3}
+  img4: {fileID: 21300000, guid: f97f2b76a11e24d87afbe57f40fb4127, type: 3}
 --- !u!114 &114911446053327886
 MonoBehaviour:
   m_ObjectHideFlags: 1

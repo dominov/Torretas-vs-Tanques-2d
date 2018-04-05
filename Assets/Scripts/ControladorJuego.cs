@@ -87,7 +87,7 @@ public class ControladorJuego : MonoBehaviour {
 	public IEnumerator EfectoDannoCorr(){
 		
 		imgPausa.gameObject.SetActive(true);
-		yield return new WaitForSeconds(.05f);
+		yield return new WaitForSeconds(.1f);
 		imgPausa.gameObject.SetActive(false);
 		/*yield return new WaitForSeconds(.05f);
 		imgPausa.gameObject.SetActive(true);
