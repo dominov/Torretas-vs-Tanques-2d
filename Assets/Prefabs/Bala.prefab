@@ -216,7 +216,7 @@ MonoBehaviour:
   WhatToColideWith:
     serializedVersion: 2
     m_Bits: 512
-  explosion: {fileID: 1768758924192272, guid: 64429090af3330744aa33b9ed7efb288, type: 2}
+  explosion: {fileID: 100002, guid: e74af37e539075d428c1f7bd8cdb781d, type: 2}
 --- !u!114 &114883438336656982
 MonoBehaviour:
   m_ObjectHideFlags: 1

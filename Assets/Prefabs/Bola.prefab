@@ -155,15 +155,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 1785003649963818, guid: 65bdc0bc03dd0044386a482799fd06c4, type: 2}
-  controlador: {fileID: 0}
+  explosionConBala: {fileID: 1145032526451464, guid: 4d7672374510c4ff2ae31c4392930808,
+    type: 2}
   vida: 5
   nivelDanno: 1
-  mySprite: {fileID: 0}
   spriteRenderer: {fileID: 212070785339999296}
-  img1: {fileID: 21300000, guid: 7845ec72d71560f4185142031744d963, type: 3}
-  img2: {fileID: 21300000, guid: 3d15e3d7a144f485db8b291189dee65d, type: 3}
-  img3: {fileID: 21300000, guid: 4b8b142aee021432dbb4fe566f64b696, type: 3}
-  img4: {fileID: 21300000, guid: f97f2b76a11e24d87afbe57f40fb4127, type: 3}
+  img:
+  - {fileID: 21300000, guid: 7845ec72d71560f4185142031744d963, type: 3}
+  - {fileID: 21300000, guid: 3d15e3d7a144f485db8b291189dee65d, type: 3}
+  - {fileID: 21300000, guid: 4b8b142aee021432dbb4fe566f64b696, type: 3}
+  - {fileID: 21300000, guid: f97f2b76a11e24d87afbe57f40fb4127, type: 3}
 --- !u!114 &114911446053327886
 MonoBehaviour:
   m_ObjectHideFlags: 1

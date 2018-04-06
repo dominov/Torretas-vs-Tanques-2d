@@ -16,7 +16,7 @@ public class BalaContacto : MonoBehaviour {
        
         if (collision.CompareTag("Bola"))
         {
-           collision.gameObject.GetComponent<BolaContacto>().BajarVida(1);
+			collision.gameObject.GetComponent<BolaContacto>().BajarVida(1, transform);
           
         }
 

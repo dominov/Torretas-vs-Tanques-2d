@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class BolaContacto : MonoBehaviour
 {
 
-    public GameObject explosion;    
+    public GameObject explosion, explosionConBala;    
     private ControladorJuego controlador;
 
     public int vida = 10;
@@ -20,7 +20,7 @@ public class BolaContacto : MonoBehaviour
 
 
 
-	public Sprite img1,img2,img3,img4;
+	public Sprite[] img;
     private void Awake()
     {
         GameObject ga = GameObject.FindWithTag("GameController");
@@ -44,19 +44,20 @@ public class BolaContacto : MonoBehaviour
 
     }
 
-    public void BajarVida(int v)
+	public void BajarVida(int v, Transform bala)
     {
         vida = vida-v;
 
-		if (vida == 1) {
-			spriteRenderer.sprite = img4;
-		} else if(vida==2)  {
-			spriteRenderer.sprite = img3;
-		} else if(vida==3)  {
-			spriteRenderer.sprite = img2;
-		} else if(vida==4)  {
-			spriteRenderer.sprite = img1;
-		}
+
+		int x = (100 * vida) / vidaInicial;
+		Debug.Log (x);
+		if (x<=25) {
+			spriteRenderer.sprite = img[3];
+		} else if(x<=50)  {
+			spriteRenderer.sprite = img[2];
+		} else if(x<=75)  {
+			spriteRenderer.sprite = img[1];
+		} 
 
         if (vida == 0)
         {
@@ -65,6 +66,8 @@ public class BolaContacto : MonoBehaviour
             Destroy(gameObject);
 			TextoFlotanteControlador.CrearTextoFlotante ("+"+vidaInicial.ToString(), transform);
            // controlador.InstaciarAsteroide(UnityEngine.Random.Range(1,4));
-        }
+		}else{
+			Instantiate(explosionConBala, bala.position, Quaternion.identity);     
+		}
     }
 }
