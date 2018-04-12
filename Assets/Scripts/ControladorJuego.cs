@@ -6,18 +6,18 @@ using UnityEngine.UI;
 
 public class ControladorJuego : MonoBehaviour {
 
-    public GameObject enemigo;
+    public GameObject[] enemigos;
     public Vector3 aparecerLimiteX;
     private int puntos =0;
     private Text textoPuntos;
     public Text textoGameOver;
-    public int Numerobolas = 2;
+    //public int Numerobolas = 2;
     private Image imgPausa;
 
     private bool gameover, restar;
     private ElementoInteractivo btn_resert;
 
-    public float tiempoAparicionBola = 5;
+    //public float tiempoAparicionBola = 5;
 
     // Use this for initialization
 
@@ -35,7 +35,9 @@ public class ControladorJuego : MonoBehaviour {
         textoGameOver.gameObject.SetActive(false);
         btn_resert.gameObject.SetActive(false);
         imgPausa.gameObject.SetActive(false);
-        StartCoroutine(InstaciarAsteroide());
+        StartCoroutine(InstaciarAsteroide(5,1,0));
+		StartCoroutine(InstaciarAsteroide(5,2,1));
+		StartCoroutine(InstaciarAsteroide(10,1,2));
        
          ActualizarTextoPuntos();
 
@@ -49,15 +51,15 @@ public class ControladorJuego : MonoBehaviour {
         } ;
     }
 
-     IEnumerator InstaciarAsteroide(){
+	IEnumerator InstaciarAsteroide(float tiempoAparicionBola,int Numerobolas, int indice){
         while (true){ 
-
+			yield return new WaitForSeconds(tiempoAparicionBola);
         for (int i = 0; i < Numerobolas; i++)
         {
             Vector3 posicionAparcion = new Vector3(Random.Range(-aparecerLimiteX.x, aparecerLimiteX.x), aparecerLimiteX.y, aparecerLimiteX.z);
-            Instantiate(enemigo, posicionAparcion, Quaternion.Euler(0,0,255));
+				Instantiate(enemigos[indice], posicionAparcion, Quaternion.Euler(0,0,255));
         }
-        yield return new WaitForSeconds(tiempoAparicionBola);
+        
         }
     }
 

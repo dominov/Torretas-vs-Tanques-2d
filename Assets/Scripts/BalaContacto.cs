@@ -23,6 +23,7 @@ public class BalaContacto : MonoBehaviour {
 
         if (!collision.CompareTag("lazer_apuntar"))
         {
+			Debug.Log(explosion);
             Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }

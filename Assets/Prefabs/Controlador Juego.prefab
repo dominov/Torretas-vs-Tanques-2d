@@ -132,8 +132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f74ee37d3c6304dbf35576e831f100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemigo: {fileID: 1139667181077598, guid: 1343b64fc3af2bd4993c2b1f5e349f42, type: 2}
+  enemigos:
+  - {fileID: 1139667181077598, guid: 1343b64fc3af2bd4993c2b1f5e349f42, type: 2}
+  - {fileID: 1532607865890150, guid: 86e055ed4589a4a8dbeb2df1e357ce49, type: 2}
+  - {fileID: 1969216240784452, guid: b8d7932bf7e92425ba88c19174a7bd5b, type: 2}
   aparecerLimiteX: {x: 12, y: 3.5, z: 0}
   textoGameOver: {fileID: 0}
-  Numerobolas: 3
-  tiempoAparicionBola: 20
+  Numerobolas: 1
+  tiempoAparicionBola: 5
