@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 19800002}
   - component: {fileID: 19900002}
   - component: {fileID: 11400000}
+  - component: {fileID: 114038508253868614}
   m_Layer: 0
   m_Name: ExplosionBalaMetal
   m_TagString: Untagged
@@ -6789,3 +6790,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100002}
   m_IsPrefabParent: 1
+--- !u!114 &114038508253868614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ac159805368f34796dab3519c55383, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoVida: 2

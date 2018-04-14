@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-/Users/desarrollo/Desktop/demos2d.apk
+/Users/desarrollo/Desktop/demos4.13.apk
 SceneListBegin?
 Assets/Scennes/main.unity
 SceneListEnd?
@@ -113,7 +113,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-29803042c1b45c1d909a78f03c333665 Assembly-CSharp.dll:.ControladorJuego
+c544cef5387cb7628029a04ab56e9a8c Assembly-CSharp.dll:.ControladorJuego
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 18058c773d91e1ef81d27a82500e8ce9 Assembly-CSharp.dll:.CamaraSeguidorJugador
 b0ab69e08435b5c28153e160130f4d4f Assembly-CSharp.dll:.BolaContacto

@@ -47,9 +47,7 @@ public class BolaContacto : MonoBehaviour
 	public void BajarVida(int v, Transform bala)
     {
         vida = vida-v;
-
-
-		int x = (100 * vida) / vidaInicial;
+		/*int x = (100 * vida) / vidaInicial;
 		Debug.Log (x);
 		if (x<=25) {
 			spriteRenderer.sprite = img[3];
@@ -57,7 +55,7 @@ public class BolaContacto : MonoBehaviour
 			spriteRenderer.sprite = img[2];
 		} else if(x<=75)  {
 			spriteRenderer.sprite = img[1];
-		} 
+		} */
 
         if (vida == 0)
         {

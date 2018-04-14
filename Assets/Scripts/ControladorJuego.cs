@@ -36,8 +36,8 @@ public class ControladorJuego : MonoBehaviour {
         btn_resert.gameObject.SetActive(false);
         imgPausa.gameObject.SetActive(false);
         StartCoroutine(InstaciarAsteroide(5,1,0));
-		StartCoroutine(InstaciarAsteroide(5,2,1));
-		StartCoroutine(InstaciarAsteroide(10,1,2));
+		StartCoroutine(InstaciarAsteroide(15,2,1));
+		StartCoroutine(InstaciarAsteroide(40,1,2));
        
          ActualizarTextoPuntos();
 

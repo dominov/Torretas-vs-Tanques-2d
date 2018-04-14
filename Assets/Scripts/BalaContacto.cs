@@ -12,8 +12,7 @@ public class BalaContacto : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D collision)
     
     {
-
-       
+		       
         if (collision.CompareTag("Bola"))
         {
 			collision.gameObject.GetComponent<BolaContacto>().BajarVida(1, transform);
@@ -23,7 +22,6 @@ public class BalaContacto : MonoBehaviour {
 
         if (!collision.CompareTag("lazer_apuntar"))
         {
-			Debug.Log(explosion);
             Instantiate(explosion, transform.position, transform.rotation);
             Destroy(gameObject);
         }

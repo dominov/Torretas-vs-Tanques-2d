@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4448741767967338}
   - component: {fileID: 198136431800076054}
   - component: {fileID: 199344400787945588}
+  - component: {fileID: 114238227647145128}
   m_Layer: 0
   m_Name: explosionBala
   m_TagString: Untagged
@@ -72,6 +73,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &114238227647145128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1909796395812846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16ac159805368f34796dab3519c55383, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoVida: 2
 --- !u!198 &198136431800076054
 ParticleSystem:
   m_ObjectHideFlags: 1
